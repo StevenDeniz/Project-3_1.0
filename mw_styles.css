@@ -1,4 +1,4 @@
-﻿/*
+/*
    New Perspectives on HTML and CSS
    Tutorial 3
    Case Problem 2
@@ -12,61 +12,109 @@
 
 */
 
+
+/*body styles*/
+
 body {
-  font-family: Tahoma, Geneva, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
 }
+
+
+/*Nav styles*/
 
 nav ul {
-  background-color: rgb(125, 120, 89);
-  line-height: 3em;
-  list-style-type: none;
-  list-style-image: url(wheelmarker.png);
+    list-style-type: none;
+
+    background-color: rgb(125, 120, 89);
+
+    line-height: 3em;
 }
 
-nav ul li:hover{
-  background-color: rgb(131, 121, 36);
-  color: yellow;
+nav ul li a {
+    text-decoration: none;
+
+    color: white;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-nav ul li:hover:link{
-  color: white;
-  opacity: 100%;
-  text-decoration: none;
+nav ul li a:hover {
+    color: yellow;
+    color: rgba(255, 255, 255, 1.0);
+    background-color: rgb(131, 121, 36);
 }
 
-nav ul li a:visited {
-  color: white;
-  text-decoration: none;
+nav ul li:hover {
+    list-style-image: url(wheelmarker.png);
 }
 
-nav ul li a:link {
-  color: white;
-  opacity: 50%;
-  text-decoration: none;
-}
+
+/*leftsection styles*/
 
 #articleheader {
-  font-size: 18px;
-  font-weight: normal;
-  font-kerning: 7px;
-  text-align: center;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: normal;
+
+    font-kerning: 7px;
 }
 
-#leftsection > p {
-  font-size: 22px;
+#leftsection>p {
+    font-size: 22px;
 }
 
 #firstpar:first-line {
     text-transform: uppercase;
 }
 
+
+/*blockquote styles*/
+
 blockquote {
-  background-color: rgb(131, 121, 36);
-  color: white;
-  font-size: 16px;
-  font-family: Comic Sans MS, Times, cursive;
+    color: white;
+    background-color: rgb(131, 121, 36);
+
+    font-family: "Comic Sans MS", Times, cursive;
+    font-size: 16px;
 }
 
-blockquote p {
+blockquote p::after, blockquote p::before {
+    content: '"'
+}
 
+
+/*rightsection styles*/
+
+#rightsection h1 {
+    text-align: center;
+
+    font-size: 22px;
+    font-weight: normal;
+
+    font-kerning: 3px;
+}
+
+#rightsection h2 {
+    text-align: right;
+
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#rightsection p {
+    text-align: justify;
+
+    color: gray;
+
+    font-size: 14px;
+}
+
+
+/*footer styles*/
+
+footer address {
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
 }
